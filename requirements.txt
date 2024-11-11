@@ -1,10 +1,10 @@
-pyrogram==1.4.12
+pyrogram
 tgcrypto
 telethon
 python-dotenv
-pyTelegramBotAPI==4.4.0
-requests==2.27.1
-ujson==5.1.0
+pyTelegramBotAPI
+requests
+ujson
 aiohttp
 matplotlib
 requests
