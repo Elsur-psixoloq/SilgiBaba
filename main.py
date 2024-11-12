@@ -41,26 +41,26 @@ import requests
 #warnings.filterwarnings("ignore")
 
 
-bot_adi = "PremiumCroBot"
+bot_adi = "Crogamesbot"
 
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "PremiumCroBot"
-    bot_token = "7461854917:AAEN7yF2SrsbCG1hq0sLtTycMgcjciIgU_c"
+    bot_adi = "Crogamesbot"
+    bot_token = "7777854062:AAGC4ZctCb5Laan9xE9ZxEBUFfC9xdh3cD4"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "PremiumCroBot"
-    bot_token = "7461854917:AAEN7yF2SrsbCG1hq0sLtTycMgcjciIgU_c"
+    bot_adi = "Crogamesbot"
+    bot_token = "7777854062:AAGC4ZctCb5Laan9xE9ZxEBUFfC9xdh3cD4"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 7287936548
+kurucu_id = 6877122263
 
-admins = [kurucu_id, 7287936548]
+admins = [kurucu_id, 6877122263]
 
 zaman_hassasiyeti = pow(10,6)
 
@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1002198931855, f"""
+        await bot.send_message(-2482172802, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Fəaliyyət: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1002198931855, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(-2482172802, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -569,8 +569,8 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="Məni qrupa əlave et", url="https://t.me/PremiumCroBot?startgroup=a")
-            callback_button2 = types.InlineKeyboardButton(text=" Fed kanal 🇦🇿", url="https://t.me/DaysFbanKanali")
+            callback_button = types.InlineKeyboardButton(text="Məni qrupa əlave et", url="https://t.me/Crogamesbot?startgroup=a")
+            callback_button2 = types.InlineKeyboardButton(text=" kanal 🇦🇿", url="https://t.me/Crobott")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
             await bot.send_message(chat_id, f'<b>✋🏻 Salam, mən oyun botuyam.\n\n🎯 Müxtəlif oyunlar oynamaq və əylənmək üçün mənimlə oynaya bilərsiniz.\n\n⚙️ Məni qrupa əlavə edin və mənimlə oynamaq üçün məni Admin et. \n\n </b>',  reply_markup=keyboard)
@@ -1985,7 +1985,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
         grup_username = grup_username.replace("'","")
 
         if f(f"groups.{chat_id}.username") == "":
-            await bot.send_message(-1002198931855, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
+            await bot.send_message(-4592404913, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
             
         f(f"groups.{chat_id}.username", grup_username) 
         f(f"groups.{chat_id}.son_oyun_aktivitesi", time.time())
