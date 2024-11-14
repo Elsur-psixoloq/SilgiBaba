@@ -1,0 +1,17 @@
+{
+  "name": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
+  "description": "Telegram UserBot",
+  "logo": "https://telegra.ph/file/2269e1ed5b9a3b0444361.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+	  "Silgi",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/Silgimusicbot/SilgiUserbot",
+  "website":   "https://t.me/silgiuserbot",
+  "success_url": "https://t.me/silgiuserbot",
+  "stack": "container"
+}
